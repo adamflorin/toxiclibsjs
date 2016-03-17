@@ -3,14 +3,14 @@ var toxi = require('./index'),
 
 var ColorList = toxi.color.ColorList,
     NamedColor = toxi.color.NamedColor,
-    AnalagousStrategy = toxi.color.theory.AnalagousStrategy,
+    AnalogousStrategy = toxi.color.theory.AnalogousStrategy,
     MathUtils = toxi.math.MathUtils;
 
-describe('toxi.color.theory.AnalagousStrategy', function(){
+describe('toxi.color.theory.AnalogousStrategy', function(){
     describe('constructor', function(){
         it('should construct with defaults', function(){
-            var strat = new AnalagousStrategy();
-            assert.ok( strat instanceof AnalagousStrategy );
+            var strat = new AnalogousStrategy();
+            assert.ok( strat instanceof AnalogousStrategy );
             assert.equal( strat.getName(), 'analagous' );
             assert.equal( typeof strat.createListFromColor, 'function');
             assert.equal( strat.theta, MathUtils.radians(10) );
@@ -18,8 +18,8 @@ describe('toxi.color.theory.AnalagousStrategy', function(){
         });
 
         it('should construct with ( theta, contrast )', function(){
-            var strat = new AnalagousStrategy( 30, 0.1 );
-            assert.ok( strat instanceof AnalagousStrategy );
+            var strat = new AnalogousStrategy( 30, 0.1 );
+            assert.ok( strat instanceof AnalogousStrategy );
             assert.equal( strat.getName(), 'analagous' );
             assert.equal( typeof strat.createListFromColor, 'function');
             assert.equal( strat.theta, MathUtils.radians(30) );
@@ -29,14 +29,14 @@ describe('toxi.color.theory.AnalagousStrategy', function(){
 
     describe('#createListFromColor( sourceColor )', function(){
         var color = NamedColor.LIME,
-            list = new AnalagousStrategy( 10, 0.2 ).createListFromColor( color );
+            list = new AnalogousStrategy( 10, 0.2 ).createListFromColor( color );
         it('should have a list of 4 colors', function(){
             assert.ok( list instanceof ColorList );
             assert.equal( list.size(), 5 );
         });
 
         it('should error when it doesnt receive a tcolor', function(){
-            assert.throws(new AnalagousStrategy().createListFromColor, Error);
+            assert.throws(new AnalogousStrategy().createListFromColor, Error);
         });
     });
 });

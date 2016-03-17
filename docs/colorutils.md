@@ -90,7 +90,7 @@ ColorTheme [(source)](https://github.com/hapticdata/toxiclibsjs/blob/master/lib/
 
 
 ##Strategies - toxi.color.theory.*
-The `toxi.color.theory.*` [package](https://github.com/hapticdata/toxiclibsjs/blob/master/lib/toxi/color/theory/) has several strategies for generating harmonious color palettes from a single color. Instances of these strategies, such as _AnalagousStrategy, ComplementaryStrategy, TriadTheoryStrategy, etc._ all define a function `createListFromColor( sourceTColor )` that returns a `ColorList` of harmonious colors.
+The `toxi.color.theory.*` [package](https://github.com/hapticdata/toxiclibsjs/blob/master/lib/toxi/color/theory/) has several strategies for generating harmonious color palettes from a single color. Instances of these strategies, such as _AnalogousStrategy, ComplementaryStrategy, TriadTheoryStrategy, etc._ all define a function `createListFromColor( sourceTColor )` that returns a `ColorList` of harmonious colors.
 
 	//make a ColorList based off the TriadTheoryStrategy
 	var color = toxi.color.NamedColor.getForName('aquamarine');

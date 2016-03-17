@@ -3057,7 +3057,7 @@ var internals = require('../internals');
 
 },{"../internals":98,"./TColor":20}],27:[function(require,module,exports){
 
-    exports.AnalagousStrategy = require('./theory/AnalagousStrategy');
+    exports.AnalogousStrategy = require('./theory/AnalogousStrategy');
     exports.colorTheoryRegistry = require('./theory/colorTheoryRegistry');
     //keep it uppercase also
     exports.ColorTheoryRegistry = exports.colorTheoryRegistry;
@@ -3074,7 +3074,7 @@ var internals = require('../internals');
     exports.strategies = require('./theory/strategies');
 
 
-},{"./theory/AnalagousStrategy":28,"./theory/ComplementaryStrategy":29,"./theory/CompoundTheoryStrategy":30,"./theory/LeftSplitComplementaryStrategy":31,"./theory/MonochromeTheoryStrategy":32,"./theory/RightSplitComplementaryStrategy":33,"./theory/SingleComplementStrategy":34,"./theory/SplitComplementaryStrategy":35,"./theory/TetradTheoryStrategy":36,"./theory/TriadTheoryStrategy":37,"./theory/colorTheoryRegistry":38,"./theory/strategies":39}],28:[function(require,module,exports){
+},{"./theory/AnalogousStrategy":28,"./theory/ComplementaryStrategy":29,"./theory/CompoundTheoryStrategy":30,"./theory/LeftSplitComplementaryStrategy":31,"./theory/MonochromeTheoryStrategy":32,"./theory/RightSplitComplementaryStrategy":33,"./theory/SingleComplementStrategy":34,"./theory/SplitComplementaryStrategy":35,"./theory/TetradTheoryStrategy":36,"./theory/TriadTheoryStrategy":37,"./theory/colorTheoryRegistry":38,"./theory/strategies":39}],28:[function(require,module,exports){
 var strategies = require('./strategies');
 var vectors = require('../../geom/vectors');
 var MathUtils = require('../../math/mathUtils');
@@ -3418,7 +3418,7 @@ var ColorList = require('../ColorList');
         SPLIT_COMPLEMENTARY: require('./SplitComplementaryStrategy'),
         LEFT_SPLIT_COMPLEMENTARY: require('./LeftSplitComplementaryStrategy'),
         RIGHT_SPLIT_COMPLEMENTARY: require('./RightSplitComplementaryStrategy'),
-        ANALAGOUS: require('./AnalagousStrategy'),
+        ANALAGOUS: require('./AnalogousStrategy'),
         MONOCHROME: require('./MonochromeTheoryStrategy'),
         TRIAD: require('./TriadTheoryStrategy'),
         TETRAD: require('./TetradTheoryStrategy'),
@@ -3449,7 +3449,7 @@ var ColorList = require('../ColorList');
 
 
 
-},{"../../internals":98,"./AnalagousStrategy":28,"./ComplementaryStrategy":29,"./CompoundTheoryStrategy":30,"./LeftSplitComplementaryStrategy":31,"./MonochromeTheoryStrategy":32,"./RightSplitComplementaryStrategy":33,"./SingleComplementStrategy":34,"./SplitComplementaryStrategy":35,"./TetradTheoryStrategy":36,"./TriadTheoryStrategy":37}],39:[function(require,module,exports){
+},{"../../internals":98,"./AnalogousStrategy":28,"./ComplementaryStrategy":29,"./CompoundTheoryStrategy":30,"./LeftSplitComplementaryStrategy":31,"./MonochromeTheoryStrategy":32,"./RightSplitComplementaryStrategy":33,"./SingleComplementStrategy":34,"./SplitComplementaryStrategy":35,"./TetradTheoryStrategy":36,"./TriadTheoryStrategy":37}],39:[function(require,module,exports){
 var has = require('../../internals/has');
 var is = require('../../internals/is');
 
